@@ -1,0 +1,6 @@
+"account_id","customer_id","balance","account_type","branch_id","status","last_activity_date"
+"1001","501","25000.00","Savings","101","Active","2025-08-30"
+"1002","502","8500.00","Checking","102","Active","2025-06-15"
+"1003","503","300.00","Savings","101","Dormant","2024-10-12"
+"1004","504","105000.00","Checking","103","Active","2025-08-20"
+"1005","505","15000.00","Savings","102","Active","2025-07-25"
