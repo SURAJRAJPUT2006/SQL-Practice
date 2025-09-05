@@ -1,8 +1,8 @@
-## SELECT Queries Practice
+## Basic Queries Practice
 Overview
-- This folder contains SQL queries focused on the SELECT keyword applied to a simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
+- This folder contains SQL queries focused on the basic questions on simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
 
-- The goal is to practice foundational data retrieval and filtering operations commonly performed by data analysts within retail or e-commerce domains. And basic vision for any new learner to how to emphasize on SELECT keyword more domain or business specific.
+- The goal is to practice foundational data retrieval and filtering operations commonly performed by data analysts within retail or e-commerce domains. And basic vision for any new learner to how to emphasize on "SELECT,FROM,WHERE" keyword AND " SOME BASIC FILTERING " more domain or business specific.
 
 
 ### Business Context
@@ -17,8 +17,9 @@ Retail analysts use these tables daily to answer critical business questions suc
 
 - Which orders require follow-up or attention?
 
+- AND MORE...
 
-This exercise set enables practice for these real-world challenges, improving your SQL SELECT command expertise in a realistic setting.
+This exercise set enables practice for these real-world challenges, improving your SQL SELECT,WHERE,FROM and filtering commands expertise in a realistic setting.
 
 ### How to Use
 - Load the provided CSV files (customers.csv, orders.csv, products.csv) into your SQL database environment as tables named customers, orders, and products.
