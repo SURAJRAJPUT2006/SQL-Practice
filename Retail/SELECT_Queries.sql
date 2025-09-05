@@ -1,1 +1,1 @@
-SELECT * FROM Customers;
+-- Q.1. List all active customers from key sales regions for targeted marketing.
