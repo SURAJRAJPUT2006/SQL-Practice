@@ -43,3 +43,5 @@ This exercise set enables practice for these real-world challenges, improving yo
  -Extract product and order information essential for inventory management.
 
  -Gain hands-on practice with real-world SQL syntax for data retrieval and filtering.
+
+ -And much more , like , with distributed in keywords to be used,  to get specific value
