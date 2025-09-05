@@ -33,3 +33,13 @@ This exercise set enables practice for these real-world challenges, improving yo
 
 - Submit your query solutions for review and feedback.
 
+### Expected Insights
+- Upon running these queries, you will be able to:
+
+ -Identify active and high-loyalty customers for targeted retention campaigns.
+
+ -Filter and prioritize high-value orders for sales focus.
+
+ -Extract product and order information essential for inventory management.
+
+ -Gain hands-on practice with real-world SQL syntax for data retrieval and filtering.
