@@ -1,6 +1,0 @@
-"customer_id","customer_name","city","country","email","loyalty_points","join_date"
-"1","John Doe","New York","USA","mailto:john@email.com","120","2023-01-15"
-"2","Jane Smith","Los Angeles","USA","mailto:jane@email.com","250","2022-08-10"
-"3","Bob Johnson","Chicago","USA","mailto:bob@email.com","75","2023-03-05"
-"4","Alice Brown","Seattle","USA","mailto:alice@email.com","300","2021-11-20"
-"5","Charlie Davis","Austin","USA","mailto:charlie@email.com","60","2023-07-12"
