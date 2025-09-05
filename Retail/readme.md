@@ -1,3 +1,5 @@
+# Getting Started
+
 ## Basic Queries Practice
 Overview
 - This folder contains SQL queries focused on the basic questions on simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
