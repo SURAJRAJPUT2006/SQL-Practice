@@ -2,9 +2,18 @@
 Overview
 - This folder contains SQL queries focused on the basic questions on simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
 
-- The goal is to practice foundational data retrieval and filtering operations commonly performed by data analysts within retail or e-commerce domains. And basic vision for any new learner to how to emphasize on "SELECT,FROM,WHERE" keyword AND " SOME BASIC FILTERING " more domain or business specific.
+- The goal is to practice foundational data retrieval and filtering operations commonly performed by data analysts within retail or e-commerce domains. And basic vision for any new learner to how to emphasize on "SELECT,FROM,WHERE" keyword AND " SOME " BASIC FILTERING " more domain or business specific.
 
+### What comes under Basic SQL queries?
+- Retrieving columns and rows using SELECT and FROM.
 
+- Filtering data with WHERE clauses (conditions, comparisons, date ranges, null checks).
+
+- Using simple operators: =, >, <, IN, BETWEEN, LIKE.
+
+- Selecting distinct records with DISTINCT.
+
+- Sorting data using ORDER BY (optional but common in basic queries)
 ### Business Context
 
 Retail analysts use these tables daily to answer critical business questions such as:
