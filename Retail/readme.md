@@ -1,5 +1,9 @@
-#Basic To advanced
-
+# Basic To advanced
+| Level        | Main Keywords /   Features                         | Query Examples   & Characteristics                                |
+|--------------|----------------------------------------------------|-------------------------------------------------------------------|
+| Basic        | SELECT, FROM, WHERE, DISTINCT, simple filtering    | Single table   queries, basic filtering, sorting, distinct rows   |
+| Intermediate | JOINs, Subqueries,   GROUP BY, HAVING              | Multi-table joins, aggregation, filtering on multiple tables      |
+| Advanced     | CTEs, Window Functions, Recursive, Complex nesting | Analytical queries, ranking, cumulative totals, hierarchical data |
 
 
 
