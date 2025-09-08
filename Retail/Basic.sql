@@ -27,24 +27,48 @@ WHERE price >100 AND category = 'Electronics';
 --5.Extract distinct product categories available in inventory.
 SELECT DISTINCT category  FROM Products;
 
---6.Show employees hired within the last year along with their departments.
+--6.Count total orders placed up to date.
+SELECT COUNT(Order_id) as total_orders FROM Orders;
 
 --7.Get the emails of customers with loyalty points above 200.
 SELECT  email FROM Customers
 WHERE loyalty_points>200;
-
+  
 --8.Retrieve orders placed in the current fiscal quarter.
+SELECT 
+    order_id,
+    customer_id,
+    order_date,
+    total_amount,
+    status,
+    EXTRACT(QUARTER FROM order_date) AS calendar_quarter
+FROM orders
+WHERE order_date >= '2025-07-01' AND order_date < '2025-09-01';  
 
 --9.Find customers from cities starting with ‘S’.
+SELECT * FROM Customers 
+WHERE city like 'S%';
 
---10.List products with stock levels between 20 and 100 units.
+--10.List products with stock levels between 30 and 100 units.
+SELECT * FROM Products 
+WHERE stock BETWEEN 30 AND 100;
 
---11.Find all products whose names contain 'Pro' (using LIKE).
+--11.Find all products whose names contain 'rt' (using LIKE).
+SELECT * FROM Products
+WHERE product_name like '%rt%';
 
---12.Show customers who live in postal codes between 90000 and 95000.
-
---13.List products launched this year if a launch_date column is present.
+--12.Find all products in a specific category(e.g. electronic products only)
+SELECT * FROM Products
+WHERE category = 'Electronics';
+ 
+--13.List all orders placed by a certain customer ID(e.g. customer_id =1 )
+SELECT * FROM Orders 
+WHERE customer_id = 1;
 
 --14.Retrieve customers with no recorded loyalty points (e.g., loyalty_points is null or 0).
+SELECT * FROM Customers
+WHERE loyalty_points is null OR loyalty_points = 0
 
 --15.Display orders where status is 'Pending'.
+SELECT * FROM Orders 
+WHERE status ='Pending';
