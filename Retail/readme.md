@@ -1,5 +1,10 @@
-# Getting Started
 
+###
+"Level","Main Keywords / Features","Query Examples & Characteristics"
+"Basic","SELECT, FROM, WHERE, DISTINCT, simple filtering","Single table queries, basic filtering, sorting, distinct rows"
+"Intermediate","JOINs, Subqueries, GROUP BY, HAVING","Multi-table joins, aggregation, filtering on multiple tables"
+"Advanced","CTEs, Window Functions, Recursive, Complex nesting","Analytical queries, ranking, cumulative totals, hierarchical data"
+# Getting Started
 ## Basic Queries Practice
 Overview
 - This folder contains SQL queries focused on the basic questions on simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
@@ -60,7 +65,3 @@ This exercise set enables practice for these real-world challenges, improving yo
 
  
 
-###"Level","Main Keywords / Features","Query Examples & Characteristics"
-   "Basic","SELECT, FROM, WHERE, DISTINCT, simple filtering","Single table queries, basic filtering, sorting, distinct rows"
-   "Intermediate","JOINs, Subqueries, GROUP BY, HAVING","Multi-table joins, aggregation, filtering on multiple tables"
-   "Advanced","CTEs, Window Functions, Recursive, Complex nesting","Analytical queries, ranking, cumulative totals, hierarchical data"
