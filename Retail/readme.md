@@ -56,4 +56,11 @@ This exercise set enables practice for these real-world challenges, improving yo
 
  -Gain hands-on practice with real-world SQL syntax for data retrieval and filtering.
 
- -And much more , like , with distributed in keywords to be used,  to get specific value
+ -And much more , like , with basic keywords to be used,  to get specific value
+
+ 
+
+###"Level","Main Keywords / Features","Query Examples & Characteristics"
+   "Basic","SELECT, FROM, WHERE, DISTINCT, simple filtering","Single table queries, basic filtering, sorting, distinct rows"
+   "Intermediate","JOINs, Subqueries, GROUP BY, HAVING","Multi-table joins, aggregation, filtering on multiple tables"
+   "Advanced","CTEs, Window Functions, Recursive, Complex nesting","Analytical queries, ranking, cumulative totals, hierarchical data"
