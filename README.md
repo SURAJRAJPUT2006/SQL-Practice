@@ -6,9 +6,9 @@ The repository is organized into three levels: **Basic**, **Intermediate**, and 
 
 These topics and exercises are designed to benefit anyone working with SQL, especially those focused on data analysis roles.  
 
-##Level with topics
+## Level with topics
 
-| Level        | Topics                                                                                           |
+| Level        | Methodologies                                                                                    |
 |--------------|--------------------------------------------------------------------------------------------------|
 | Basic        | SELECT, WHERE, ORDER BY, GROUP BY, aggregates, DISTINCT, JOIN (simple), LIMIT, HAVING            |
 | Intermediate | Multiple-table JOINs, Subqueries, Self JOINs, Correlated subqueries, CASE WHEN, INSERT/UPDATE/DELETE, UNION/UNION ALL, Grouping, Database calculations (COALESCE, CONCAT)   |
