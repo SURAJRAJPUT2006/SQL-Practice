@@ -8,11 +8,12 @@ These topics and exercises are designed to benefit anyone working with SQL, espe
 
 ## Level with topics
 
-| Level        | Methodologies                                                                                    |
-|--------------|--------------------------------------------------------------------------------------------------|
-| Basic        | SELECT, WHERE, ORDER BY, GROUP BY, aggregates, DISTINCT, JOIN (simple), LIMIT, HAVING            |
-| Intermediate | Multiple-table JOINs, Subqueries, Self JOINs, Correlated subqueries, CASE WHEN, INSERT/UPDATE/DELETE, UNION/UNION ALL, Grouping, Database calculations (COALESCE, CONCAT)   |
-| Advanced     | Window functions (ROW_NUMBER, RANK, LAG, etc.), CTEs (WITH), Recursive queries, Stored procedures, Query optimization, Views, Transactions, Temporal types, Security         |
+|              |                                                    |                                                                   | 
+|--------------|----------------------------------------------------|-------------------------------------------------------------------| 
+| Level        | Main Keywords / Features                           | Query Examples & Characteristics                                  | 
+| Basic        | SELECT, FROM, WHERE, DISTINCT, simple filtering    | Single table queries, basic filtering, sorting, distinct rows     | 
+| Intermediate | JOINs, Subqueries, GROUP BY, HAVING                | Multi-table joins, aggregation, filtering on multiple tables      | 
+| Advanced     | CTEs, Window Functions, Recursive, Complex nesting | Analytical queries, ranking, cumulative totals, hierarchical data | 
 
 
 
