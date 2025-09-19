@@ -1,0 +1,101 @@
+customer_id,customer_name,city,segment,join_date,email,phone
+1,Customer_1,"Los Angeles",Corporate,2018-01-31,customer1@example.com,555-010001
+2,Customer_2,Chicago,"Home Office",2018-03-02,customer2@example.com,555-010002
+3,Customer_3,Houston,Consumer,2018-04-01,customer3@example.com,555-010003
+4,Customer_4,Miami,Corporate,2018-05-01,customer4@example.com,555-010004
+5,Customer_5,"New York","Home Office",2018-05-31,customer5@example.com,555-010005
+6,Customer_6,"Los Angeles",Consumer,2018-06-30,customer6@example.com,555-010006
+7,Customer_7,Chicago,Corporate,2018-07-30,customer7@example.com,555-010007
+8,Customer_8,Houston,"Home Office",2018-08-29,customer8@example.com,555-010008
+9,Customer_9,Miami,Consumer,2018-09-28,customer9@example.com,555-010009
+10,Customer_10,"New York",Corporate,2018-10-28,customer10@example.com,555-010010
+11,Customer_11,"Los Angeles","Home Office",2018-11-27,customer11@example.com,555-010011
+12,Customer_12,Chicago,Consumer,2018-12-27,customer12@example.com,555-010012
+13,Customer_13,Houston,Corporate,2019-01-26,customer13@example.com,555-010013
+14,Customer_14,Miami,"Home Office",2019-02-25,customer14@example.com,555-010014
+15,Customer_15,"New York",Consumer,2019-03-27,customer15@example.com,555-010015
+16,Customer_16,"Los Angeles",Corporate,2019-04-26,customer16@example.com,555-010016
+17,Customer_17,Chicago,"Home Office",2019-05-26,customer17@example.com,555-010017
+18,Customer_18,Houston,Consumer,2019-06-25,customer18@example.com,555-010018
+19,Customer_19,Miami,Corporate,2019-07-25,customer19@example.com,555-010019
+20,Customer_20,"New York","Home Office",2019-08-24,customer20@example.com,555-010020
+21,Customer_21,"Los Angeles",Consumer,2019-09-23,customer21@example.com,555-010021
+22,Customer_22,Chicago,Corporate,2019-10-23,customer22@example.com,555-010022
+23,Customer_23,Houston,"Home Office",2019-11-22,customer23@example.com,555-010023
+24,Customer_24,Miami,Consumer,2019-12-22,customer24@example.com,555-010024
+25,Customer_25,"New York",Corporate,2020-01-21,customer25@example.com,555-010025
+26,Customer_26,"Los Angeles","Home Office",2020-02-20,customer26@example.com,555-010026
+27,Customer_27,Chicago,Consumer,2020-03-21,customer27@example.com,555-010027
+28,Customer_28,Houston,Corporate,2020-04-20,customer28@example.com,555-010028
+29,Customer_29,Miami,"Home Office",2020-05-20,customer29@example.com,555-010029
+30,Customer_30,"New York",Consumer,2020-06-19,customer30@example.com,555-010030
+31,Customer_31,"Los Angeles",Corporate,2020-07-19,customer31@example.com,555-010031
+32,Customer_32,Chicago,"Home Office",2020-08-18,customer32@example.com,555-010032
+33,Customer_33,Houston,Consumer,2020-09-17,customer33@example.com,555-010033
+34,Customer_34,Miami,Corporate,2020-10-17,customer34@example.com,555-010034
+35,Customer_35,"New York","Home Office",2020-11-16,customer35@example.com,555-010035
+36,Customer_36,"Los Angeles",Consumer,2020-12-16,customer36@example.com,555-010036
+37,Customer_37,Chicago,Corporate,2021-01-15,customer37@example.com,555-010037
+38,Customer_38,Houston,"Home Office",2021-02-14,customer38@example.com,555-010038
+39,Customer_39,Miami,Consumer,2021-03-16,customer39@example.com,555-010039
+40,Customer_40,"New York",Corporate,2021-04-15,customer40@example.com,555-010040
+41,Customer_41,"Los Angeles","Home Office",2021-05-15,customer41@example.com,555-010041
+42,Customer_42,Chicago,Consumer,2021-06-14,customer42@example.com,555-010042
+43,Customer_43,Houston,Corporate,2021-07-14,customer43@example.com,555-010043
+44,Customer_44,Miami,"Home Office",2021-08-13,customer44@example.com,555-010044
+45,Customer_45,"New York",Consumer,2021-09-12,customer45@example.com,555-010045
+46,Customer_46,"Los Angeles",Corporate,2021-10-12,customer46@example.com,555-010046
+47,Customer_47,Chicago,"Home Office",2021-11-11,customer47@example.com,555-010047
+48,Customer_48,Houston,Consumer,2021-12-11,customer48@example.com,555-010048
+49,Customer_49,Miami,Corporate,2022-01-10,customer49@example.com,555-010049
+50,Customer_50,"New York","Home Office",2022-02-09,customer50@example.com,555-010050
+51,Customer_51,"Los Angeles",Consumer,2022-03-11,customer51@example.com,555-010051
+52,Customer_52,Chicago,Corporate,2022-04-10,customer52@example.com,555-010052
+53,Customer_53,Houston,"Home Office",2022-05-10,customer53@example.com,555-010053
+54,Customer_54,Miami,Consumer,2022-06-09,customer54@example.com,555-010054
+55,Customer_55,"New York",Corporate,2022-07-09,customer55@example.com,555-010055
+56,Customer_56,"Los Angeles","Home Office",2022-08-08,customer56@example.com,555-010056
+57,Customer_57,Chicago,Consumer,2022-09-07,customer57@example.com,555-010057
+58,Customer_58,Houston,Corporate,2022-10-07,customer58@example.com,555-010058
+59,Customer_59,Miami,"Home Office",2022-11-06,customer59@example.com,555-010059
+60,Customer_60,"New York",Consumer,2022-12-06,customer60@example.com,555-010060
+61,Customer_61,"Los Angeles",Corporate,2023-01-05,customer61@example.com,555-010061
+62,Customer_62,Chicago,"Home Office",2023-02-04,customer62@example.com,555-010062
+63,Customer_63,Houston,Consumer,2023-03-06,customer63@example.com,555-010063
+64,Customer_64,Miami,Corporate,2023-04-05,customer64@example.com,555-010064
+65,Customer_65,"New York","Home Office",2023-05-05,customer65@example.com,555-010065
+66,Customer_66,"Los Angeles",Consumer,2023-06-04,customer66@example.com,555-010066
+67,Customer_67,Chicago,Corporate,2023-07-04,customer67@example.com,555-010067
+68,Customer_68,Houston,"Home Office",2023-08-03,customer68@example.com,555-010068
+69,Customer_69,Miami,Consumer,2023-09-02,customer69@example.com,555-010069
+70,Customer_70,"New York",Corporate,2023-10-02,customer70@example.com,555-010070
+71,Customer_71,"Los Angeles","Home Office",2023-11-01,customer71@example.com,555-010071
+72,Customer_72,Chicago,Consumer,2023-12-01,customer72@example.com,555-010072
+73,Customer_73,Houston,Corporate,2023-12-31,customer73@example.com,555-010073
+74,Customer_74,Miami,"Home Office",2024-01-30,customer74@example.com,555-010074
+75,Customer_75,"New York",Consumer,2024-02-29,customer75@example.com,555-010075
+76,Customer_76,"Los Angeles",Corporate,2024-03-30,customer76@example.com,555-010076
+77,Customer_77,Chicago,"Home Office",2024-04-29,customer77@example.com,555-010077
+78,Customer_78,Houston,Consumer,2024-05-29,customer78@example.com,555-010078
+79,Customer_79,Miami,Corporate,2024-06-28,customer79@example.com,555-010079
+80,Customer_80,"New York","Home Office",2024-07-28,customer80@example.com,555-010080
+81,Customer_81,"Los Angeles",Consumer,2024-08-27,customer81@example.com,555-010081
+82,Customer_82,Chicago,Corporate,2024-09-26,customer82@example.com,555-010082
+83,Customer_83,Houston,"Home Office",2024-10-26,customer83@example.com,555-010083
+84,Customer_84,Miami,Consumer,2024-11-25,customer84@example.com,555-010084
+85,Customer_85,"New York",Corporate,2024-12-25,customer85@example.com,555-010085
+86,Customer_86,"Los Angeles","Home Office",2025-01-24,customer86@example.com,555-010086
+87,Customer_87,Chicago,Consumer,2025-02-23,customer87@example.com,555-010087
+88,Customer_88,Houston,Corporate,2025-03-25,customer88@example.com,555-010088
+89,Customer_89,Miami,"Home Office",2025-04-24,customer89@example.com,555-010089
+90,Customer_90,"New York",Consumer,2025-05-24,customer90@example.com,555-010090
+91,Customer_91,"Los Angeles",Corporate,2025-06-23,customer91@example.com,555-010091
+92,Customer_92,Chicago,"Home Office",2025-07-23,customer92@example.com,555-010092
+93,Customer_93,Houston,Consumer,2025-08-22,customer93@example.com,555-010093
+94,Customer_94,Miami,Corporate,2025-09-21,customer94@example.com,555-010094
+95,Customer_95,"New York","Home Office",2025-10-21,customer95@example.com,555-010095
+96,Customer_96,"Los Angeles",Consumer,2025-11-20,customer96@example.com,555-010096
+97,Customer_97,Chicago,Corporate,2025-12-20,customer97@example.com,555-010097
+98,Customer_98,Houston,"Home Office",2026-01-19,customer98@example.com,555-010098
+99,Customer_99,Miami,Consumer,2026-02-18,customer99@example.com,555-010099
+100,Customer_100,"New York",Corporate,2026-03-20,customer100@example.com,555-010100
