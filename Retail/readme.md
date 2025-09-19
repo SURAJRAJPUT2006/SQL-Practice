@@ -1,70 +1,96 @@
-# Basic To advanced
-| Level        | Main Keywords /   Features                         | Query Examples   & Characteristics                                |
-|--------------|----------------------------------------------------|-------------------------------------------------------------------|
-| Basic        | SELECT, FROM, WHERE, DISTINCT, simple filtering    | Single table   queries, basic filtering, sorting, distinct rows   |
-| Intermediate | JOINs, Subqueries,   GROUP BY, HAVING              | Multi-table joins, aggregation, filtering on multiple tables      |
-| Advanced     | CTEs, Window Functions, Recursive, Complex nesting | Analytical queries, ranking, cumulative totals, hierarchical data |
+# Basic SQL Queries Practice
 
+## Overview
 
+- Practice foundational SQL queries on a simulated retail business dataset modeling customer management, product catalog, and order processing.
+- Focus on mastering data retrieval and filtering using `SELECT`, `FROM`, and `WHERE` clauses with domain-specific business insight.
 
+## Core Concepts
 
-## Basic Queries Practice
-Overview
-- This folder contains SQL queries focused on the basic questions on simulated retail business dataset. The dataset models core retail operations including customer management, product catalog, and order processing.
+- Retrieve specific columns and rows from single tables.
+- Use filtering with conditions (`=`, `>`, `<`, `IN`, `BETWEEN`, `LIKE`).
+- Select unique rows with `DISTINCT`.
+- Sort results with `ORDER BY`.
 
-- The goal is to practice foundational data retrieval and filtering operations commonly performed by data analysts within retail or e-commerce domains. And basic vision for any new learner to how to emphasize on `SELECT,FROM,WHERE` keyword AND SOME ` BASIC FILTERING` more domain or business specific.
+## Business Use Cases
 
-### What comes under Basic SQL queries?
-- Retrieving columns and rows using `SELECT` and `FROM`.
+- Identify active/high-value customers.
+- Determine product demand and restocking needs.
+- Track sales performance quarterly.
+- Prioritize orders needing attention.
 
-- Filtering data with `WHERE clauses (conditions, comparisons, date ranges, null checks)`.
+## Instruction
 
-- Using simple operators: `=, >, <, IN, BETWEEN, LIKE`.
+- Load `customers.csv`, `orders.csv`, `products.csv` as tables.
+- Review, run, and modify SQL scripts with embedded business logic comments.
+- Practice writing clear, efficient queries.
 
-- Selecting distinct records with `DISTINCT`.
+---
 
-- Sorting data using `ORDER BY (optional but common in basic queries)`
-### Business Context
+# Intermediate SQL Queries Practice
 
-Retail analysts use these tables daily to answer critical business questions such as:
+## Overview
 
-- Who are the most valuable and active customers?
+- Solve more complex problems involving data across multiple tables with real retail scenarios.
+- Learn and apply JOINs, subqueries, aggregations, and conditional logic to extract deeper insights.
 
-- Which products are in demand or require restocking?
+## Core Concepts
 
-- How are sales performing this quarter?
+- Multi-table joins (`INNER JOIN`, `LEFT JOIN`, etc.).
+- Subqueries, including correlated ones.
+- Grouping data with `GROUP BY` and filtering groups with `HAVING`.
+- Use of CASE expressions for conditional logic.
+- Data modification using DML (INSERT, UPDATE, DELETE).
+- Combining result sets with UNION and UNION ALL.
 
-- Which orders require follow-up or attention?
+## Business Use Cases
 
-- `AND MORE...`
+- Calculate total sales per customer or product category.
+- Identify customers with special buying patterns.
+- Analyze transactions above average values.
+- Manage inventory and order statuses.
+- Perform advanced customer segmentation.
 
-This exercise set enables practice for these real-world challenges, improving your SQL `SELECT,WHERE,FROM` and `filtering` commands expertise in a realistic setting.
+---
 
-### How to Use
-- Load the provided `CSV files (customers.csv, orders.csv, products.csv)` into your SQL database environment as tables named customers, orders, and products.
+# Advanced SQL Queries Practice
 
- - Open and review the SQL query files that contain practice problems using the SELECT statement.
+## Overview
 
-- Run these queries against the dataset to observe results.
+- Master analytical and performance-enhancing techniques for real-world retail analytics.
+- Explore recursive queries, window functions, CTEs, and complex query tuning methods.
 
-- Review inline comments in each query file explaining the logic and business relevance.
+## Core Concepts
 
-- Modify and experiment with queries to deepen understanding.
+- Common Table Expressions (CTEs) and recursive queries for hierarchical data analysis.
+- Window functions like ROW_NUMBER(), RANK(), LAG(), LEAD() for ranking and trend analysis.
+- Stored procedures and user-defined functions for reusable business logic.
+- Query performance tuning and optimization strategies.
+- Pivoting and unpivoting data for dynamic reporting.
+- Handling semi-structured data formats (JSON, XML).
 
-- Submit your query solutions for review and feedback.
+## Business Use Cases
 
-### Expected Insights
-- Upon running these queries, you will be able to:
+- Analyze customer purchase behaviors over time with ranking.
+- Generate rolling sales totals and month-over-month growth.
+- Build hierarchical reporting from product categories and sub-categories.
+- Automate complex workflows via stored procedures.
+- Optimize heavy query loads on large retail databases.
 
- -Identify active and high-loyalty customers for targeted retention campaigns.
+---
 
- -Filter and prioritize high-value orders for sales focus.
+# How to Use This Repository
 
- -Extract product and order information essential for inventory management.
+1. Load the provided CSV datasets into your SQL environment.
+2. Solve problems beginning at basic level and progress to intermediate and advanced levels.
+3. Use README comments and problem descriptions to understand business context.
+4. Modify queries to test alternate scenarios.
+5. Showcase solutions and insights in your portfolio.
 
- -Gain hands-on practice with real-world SQL syntax for data retrieval and filtering.
+---
 
- -And much more , like , with basic keywords to be used,  to get specific value
+## Why Retail Domain?
 
- 
+Retail provides a rich environment for learning SQL with practical business challenges. Concepts from customer analytics to inventory management translate well across data analyst roles in multiple industries, helping you build transferable skills.
 
+---
