@@ -14,12 +14,22 @@ These topics and exercises are designed to benefit anyone working with SQL, espe
 | Intermediate | JOINs, Subqueries, GROUP BY, HAVING                | Multi-table joins, aggregation, filtering on multiple tables      | 
 | Advanced     | CTEs, Window Functions, Recursive, Complex nesting | Analytical queries, ranking, cumulative totals, hierarchical data | 
 
+## Projects & Domains
 
+- Retail sales analytics (current focus)
+- Planned: Finance, Healthcare, Marketing projects to demonstrate domain versatility
 
-## How to Use
+## How to Use This Repository
 
-- Load sample datasets from the `data/` folder into your SQL environment.
-- Execute queries from the `queries/` folder.
-- Queries contain comments explaining the logic.
+- Explore folders by skill level (`/basic_sql/`, `/intermediate_sql/`, `/advanced_sql/`)
+- Follow README instructions inside each folder for problem description and SQL scripts
+- Sample datasets are included for practice
 
+## Contact / Contributions
+
+Feel free to open issues or pull requests. You can reach me at [rajputsuraj2006@gmail.com].
+
+---
+
+Thank you for visiting,
 Contributions and improvements welcome!
