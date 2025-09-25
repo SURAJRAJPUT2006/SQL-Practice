@@ -90,3 +90,8 @@ SELECT *, CASE WHEN age > 45 THEN "SENIOR" END as "SENIOR" FROM customerbase
 GROUP BY cust_id
 ORDER BY totalcredlim desc LIMIT 1)
 --============================================================================================================================================================================================
+
+-- Q18.Display the average age for each customer segment.
+SELECT Customer_segment , avg(age) as avgage FROM customerbase
+GROUP BY Customer_Segment
+--============================================================================================================================================================================================
