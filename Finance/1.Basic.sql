@@ -85,4 +85,8 @@ WHERE Credit_Limit > 10000;
 SELECT *, CASE WHEN age > 45 THEN "SENIOR" END as "SENIOR" FROM customerbase
 --============================================================================================================================================================================================
 
-
+-- Q17.Which customer has the highest total credit limit?
+(SELECT Cust_id ,SUM(credit_limit) as totalcredlim FROM cardbase 
+GROUP BY cust_id
+ORDER BY totalcredlim desc LIMIT 1)
+--============================================================================================================================================================================================
