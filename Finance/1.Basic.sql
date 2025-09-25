@@ -1,92 +1,88 @@
---'cleaning' 
-SELECT * FROM cards_data WHERE card_brand NOT IN ('Visa', 'Mastercard', 'Discover', 'Amex');
-UPDATE finance.cards_data SET card_brand = 'UNKNOWN' WHERE card_brand = "1577";
-COMMIT;
+-- Cleaning
+UPDATE transactionbase SET transaction_date =  STR_TO_DATE(transaction_date, '%d-%b-%y');   
 --============================================================================================================================================================================================
 
--- Q1.Count total credit cards issued per card brand.
-SELECT card_brand,COUNT(id) FROM cards_data
-GROUP BY card_brand;
+-- Q1.List all customers who belong to the "Gold" or "Platinum" customer segment.
+SELECT * FROM customerbase
+WHERE Customer_Segment= 'Gold' or Customer_Segment= 'Platinum';
 --============================================================================================================================================================================================
 
--- Q2.List card_types and count of cards for each.
-SELECT  card_type , count(card_brand) FROM cards_data
-GROUP BY card_type;
+-- Q2.Find the total credit limit available for each card family.
+SELECT card_family , SUM(credit_limit ) as totalcreditLimit FROM cardbase
+GROUP BY Card_Family;
 --============================================================================================================================================================================================
 
--- Q3.Find average, minimum, and maximum credit_limit by card_type.
-SELECT card_type,
-	AVG(CAST(REPLACE(credit_limit,'$','') AS DECIMAL(10, 2))) AS avg_credit_limit,
-	MIN(CAST(REPLACE(credit_limit , '$','')AS DECIMAL(10, 2))) AS min_credit_limit,
-	MAX(CAST(REPLACE(credit_limit,'$','') AS DECIMAL(10, 2))) AS max_credit_limit
-FROM cards_data
-GROUP BY card_type
-LIMIT 3;
+-- Q3.What is the average credit limit per card family?
+SELECT card_family , avg(credit_limit) as avgcreditlimit FROM cardbase
+GROUP BY Card_Family;
 --============================================================================================================================================================================================
 
--- Q4.Count users with more than one credit card.
-SELECT COUNT(id)  FROM users_data
-WHERE num_credit_cards >1
-;
+-- Q4.Calculate the average transaction value for each transaction segment.
+SELECT transaction_segment, AVG(transaction_value) FROM transactionbase
+GROUP BY Transaction_Segment;
 --============================================================================================================================================================================================
 
--- Q5.Count transactions done with chip vs without.
+-- Q5.Determine the number of customers in each age group bucket (<25, 25-40, >40).
 SELECT
-		COUNT( CASE WHEN has_chip ='YES' THEN 1 ELSE NULL END ) as yescount,
-        COUNT( CASE WHEN has_chip ='NO'  THEN 1 ELSE NULL END ) as nocount
-FROM cards_data;
+		COUNT(case when age <25 then 1 end) as "<25",
+		COUNT(case when age between 25 and 40 then 1 end) as "25-40",
+        COUNT(case when age > 40 then 1 end) as ">40"
+FROM customerbase ;
 --============================================================================================================================================================================================
 
--- Q6.List users with yearly_income less than 2 lakhs.
-SELECT * FROM users_data
-WHERE CAST(replace(yearly_income,'$','') AS decimal (10,2) )< 200000;
---============================================================================================================================================================================================
-
--- Q7.Show users whose credit_score is below 650.
-SELECT * FROM users_data
-WHERE credit_score < 650;
---============================================================================================================================================================================================
-
--- Q8.Find number of cards reported on dark web, grouped by card_brand.
-SELECT card_brand,(card_on_dark_web) FROM cards_data
-WHERE card_on_dark_web = 'Yes'
-GROUP BY card_brand;
---============================================================================================================================================================================================
-
--- Q9.Count unique merchant_cities and states in transactions.
-SELECT  merchant_city,merchant_state ,COUNT(merchant_city) as cities, COUNT(merchant_state) as states FROM transactions
-GROUP BY merchant_state,merchant_city;
---============================================================================================================================================================================================
-
--- Q10.Report the top 5 merchant cities by transaction amount.
-SELECT merchant_city, amount FROM transactions
-ORDER BY amount DESC
+-- Q6.List the top 5 customers by the number of transactions they have made.
+SELECT Credit_Card_ID,COUNT(*) FROM transactionbase
+GROUP BY Credit_Card_ID 
+ORDER BY COUNT(*) desc
 LIMIT 5;
 --============================================================================================================================================================================================
 
--- Q11.Find transactions with errors and their merchant details.
-SELECT * FROM transactions
-WHERE errors  not IN('');
+-- Q7.List all customer segments and count of customers in each.
+SELECT customer_segment , COUNT(customer_segment) FROM customerbase
+GROUP BY Customer_Segment;
 --============================================================================================================================================================================================
 
--- Q12.List number of users per zip code.
-SELECT COUNT(id) as usersperzip, substring_index(address,' ',1) as zipcode FROM users_data
-GROUP BY zipcode;
+-- Q8.Who are the top 10 youngest customers?
+SELECT * FROM customerbase
+ORDER BY age
+LIMIT 10;
 --============================================================================================================================================================================================
 
--- Q13.Find clients above retirement_age who have made at least one transaction.
-SELECT * FROM users_data
-WHERE retirement_age < current_age;
+-- Q9.List all transactions in the last month.
+SELECT * FROM transactionbase
+where Month(Transaction_Date)  = 11;
 --============================================================================================================================================================================================
 
--- Q14.Show total debt aggregated by merchant_city.
-SELECT merchant_city, SUM(total_debt) FROM users_data
-GROUP BY merchant_city;
+-- Q10.What’s the max, min, avg transaction value per segment?
+SELECT transaction_segment,max(transaction_value), min(transaction_value), avg(transaction_value) FROM transactionbase
+group by Transaction_Segment;
 --============================================================================================================================================================================================
 
--- Q15.List cards where year_pin_last_changed older than 5 years.
-SELECT * FROM cards_data
-WHERE year_pin_last_changed <= (2020-5);
+-- Q11.How many transactions had a value above 1,000?
+SELECT COUNT(*) FROM transactionbase
+WHERE transaction_value > 1000;
+--============================================================================================================================================================================================
+
+-- Q12.What’s the count of customers per customer vintage group?
+SELECT Customer_vintage_group ,COUNT(Cust_id) FROM customerbase
+GROUP BY Customer_Vintage_Group;
+--============================================================================================================================================================================================
+
+-- Q13.How many unique transaction segments are there?
+SELECT COUNT( DISTINCt transaction_segment) as segments FROM transactionbase;
+--============================================================================================================================================================================================
+
+-- Q14.What’s the average age of all customers?
+SELECT avg(age) as avgage FROM customerbase;
+--============================================================================================================================================================================================
+
+-- Q15.Retrieve all Platinum cards with a credit limit above 10,000.
+SELECT Card_Family , Credit_Limit FROM cardbase
+WHERE Credit_Limit > 10000;
+--============================================================================================================================================================================================
+
+-- Q16.Find all customers in the “Senior” (45+) age group.
+SELECT *, CASE WHEN age > 45 THEN "SENIOR" END as "SENIOR" FROM customerbase
 --============================================================================================================================================================================================
 
 
