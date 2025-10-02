@@ -17,7 +17,7 @@ These topics and exercises are designed to benefit anyone working with SQL, espe
 ## Business Domains  
 
 - Have performed all levels of real-world questions on different business domains
-- `Retail/`,`Finance/`,`Healthcare/`,`Marketing/`
+- `Retail/`,`Finance/`,`Healthcare/`
 - There are three levels in each domain , as i have defined in above chart 
 
 ## How to Use This Repository
